@@ -1,0 +1,29 @@
+[project]
+name = "neurocraft-harness"
+version = "0.2.0"
+description = "Agentic app-building harness: Constitution + agents + skills + orchestration, one installable CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12",
+]
+
+[project.scripts]
+harness = "neurocraft_harness.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+neurocraft_harness = [
+    "constitution/*.md",
+    "constitution/stacks/*.md",
+    "constitution/testing/*.md",
+    "agents/*.md",
+    "orchestration/workflows/*.md",
+    "docs/*.md",
+]
