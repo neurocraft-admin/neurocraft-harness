@@ -20,10 +20,9 @@ AGENTS_DIR = PACKAGE_ROOT / "agents"
 ORCHESTRATION_DIR = PACKAGE_ROOT / "orchestration"
 
 STACK_FILE_MAP = {
-    "dotnet": ["csharp.md", "sql.md"],
-    "spring": ["java-spring.md", "sql.md"],
-    "fastapi": ["python.md", "sql.md"],
-    "angular": ["angular.md"],
+    "dotnet": ["csharp.md", "sql.md", "angular.md"],
+    "spring": ["java-spring.md", "sql.md", "angular.md"],
+    "fastapi": ["python.md", "sql.md", "angular.md"],
 }
 
 
